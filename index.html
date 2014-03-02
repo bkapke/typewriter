@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Typewriter JS</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <script src="js/typewriter.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            var settings = ({
+                delayedStart: 300,
+                speed: 300,
+                randomRange: true
+            });
+            var typeWriter = new TypeWriter($('#typewriter'), settings);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="columns-12">
+            <div class="pad">
+                <div class="inner">
+                    <p class="typewriter" id="typewriter">Hello there, I am typewriter.js.  Initialize me and I will type out your code block in the view.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

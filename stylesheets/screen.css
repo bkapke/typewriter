@@ -1,0 +1,223 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* Reserve this file for document defaults */
+/* box-sizing added to all as a wild card */
+/* line 8, ../sass/_default.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 11, ../sass/_default.scss */
+.clearfix {
+  clear: both; }
+
+/* line 9, ../sass/_grid.scss */
+.columns-1 .pad, .columns-1 .inner {
+  width: 8.33333%;
+  padding: 1rem;
+  float: left; }
+  /* line 13, ../sass/_grid.scss */
+  .columns-1 .pad .inner, .columns-1 .inner .inner {
+    background-color: #eeeeee; }
+
+/* line 9, ../sass/_grid.scss */
+.columns-2 .pad, .columns-2 .inner {
+  width: 16.66667%;
+  padding: 1rem;
+  float: left; }
+  /* line 13, ../sass/_grid.scss */
+  .columns-2 .pad .inner, .columns-2 .inner .inner {
+    background-color: #eeeeee; }
+
+/* line 9, ../sass/_grid.scss */
+.columns-3 .pad, .columns-3 .inner {
+  width: 25%;
+  padding: 1rem;
+  float: left; }
+  /* line 13, ../sass/_grid.scss */
+  .columns-3 .pad .inner, .columns-3 .inner .inner {
+    background-color: #eeeeee; }
+
+/* line 9, ../sass/_grid.scss */
+.columns-4 .pad, .columns-4 .inner {
+  width: 33.33333%;
+  padding: 1rem;
+  float: left; }
+  /* line 13, ../sass/_grid.scss */
+  .columns-4 .pad .inner, .columns-4 .inner .inner {
+    background-color: #eeeeee; }
+
+/* line 9, ../sass/_grid.scss */
+.columns-5 .pad, .columns-5 .inner {
+  width: 41.66667%;
+  padding: 1rem;
+  float: left; }
+  /* line 13, ../sass/_grid.scss */
+  .columns-5 .pad .inner, .columns-5 .inner .inner {
+    background-color: #eeeeee; }
+
+/* line 9, ../sass/_grid.scss */
+.columns-6 .pad, .columns-6 .inner {
+  width: 50%;
+  padding: 1rem;
+  float: left; }
+  /* line 13, ../sass/_grid.scss */
+  .columns-6 .pad .inner, .columns-6 .inner .inner {
+    background-color: #eeeeee; }
+
+/* line 9, ../sass/_grid.scss */
+.columns-7 .pad, .columns-7 .inner {
+  width: 58.33333%;
+  padding: 1rem;
+  float: left; }
+  /* line 13, ../sass/_grid.scss */
+  .columns-7 .pad .inner, .columns-7 .inner .inner {
+    background-color: #eeeeee; }
+
+/* line 9, ../sass/_grid.scss */
+.columns-8 .pad, .columns-8 .inner {
+  width: 66.66667%;
+  padding: 1rem;
+  float: left; }
+  /* line 13, ../sass/_grid.scss */
+  .columns-8 .pad .inner, .columns-8 .inner .inner {
+    background-color: #eeeeee; }
+
+/* line 9, ../sass/_grid.scss */
+.columns-9 .pad, .columns-9 .inner {
+  width: 75%;
+  padding: 1rem;
+  float: left; }
+  /* line 13, ../sass/_grid.scss */
+  .columns-9 .pad .inner, .columns-9 .inner .inner {
+    background-color: #eeeeee; }
+
+/* line 9, ../sass/_grid.scss */
+.columns-10 .pad, .columns-10 .inner {
+  width: 83.33333%;
+  padding: 1rem;
+  float: left; }
+  /* line 13, ../sass/_grid.scss */
+  .columns-10 .pad .inner, .columns-10 .inner .inner {
+    background-color: #eeeeee; }
+
+/* line 9, ../sass/_grid.scss */
+.columns-11 .pad, .columns-11 .inner {
+  width: 91.66667%;
+  padding: 1rem;
+  float: left; }
+  /* line 13, ../sass/_grid.scss */
+  .columns-11 .pad .inner, .columns-11 .inner .inner {
+    background-color: #eeeeee; }
+
+/* line 9, ../sass/_grid.scss */
+.columns-12 .pad, .columns-12 .inner {
+  width: 100%;
+  padding: 1rem;
+  float: left; }
+  /* line 13, ../sass/_grid.scss */
+  .columns-12 .pad .inner, .columns-12 .inner .inner {
+    background-color: #eeeeee; }
+
+/*clear:both;*/
+/* line 57, ../sass/_grid.scss */
+.row {
+  clear: both; }
+
+@media only screen and (max-width: 767px) {
+  /* line 9, ../sass/_grid.scss */
+  .columns-1 .pad, .columns-1 .inner, .columns-2 .pad, .columns-2 .inner, .columns-3 .pad, .columns-3 .inner, .columns-4 .pad, .columns-4 .inner,
+  .columns-5 .pad,
+  .columns-5 .inner, .columns-6 .pad, .columns-6 .inner, .columns-7 .pad, .columns-7 .inner, .columns-8 .pad, .columns-8 .inner,
+  .columns-9 .pad,
+  .columns-9 .inner, .columns-10 .pad, .columns-10 .inner, .columns-11 .pad, .columns-11 .inner, .columns-12 .pad, .columns-12 .inner {
+    width: 100%;
+    padding: 1rem;
+    float: left; }
+    /* line 13, ../sass/_grid.scss */
+    .columns-1 .pad .inner, .columns-1 .inner .inner, .columns-2 .pad .inner, .columns-2 .inner .inner, .columns-3 .pad .inner, .columns-3 .inner .inner, .columns-4 .pad .inner, .columns-4 .inner .inner,
+    .columns-5 .pad .inner,
+    .columns-5 .inner .inner, .columns-6 .pad .inner, .columns-6 .inner .inner, .columns-7 .pad .inner, .columns-7 .inner .inner, .columns-8 .pad .inner, .columns-8 .inner .inner,
+    .columns-9 .pad .inner,
+    .columns-9 .inner .inner, .columns-10 .pad .inner, .columns-10 .inner .inner, .columns-11 .pad .inner, .columns-11 .inner .inner, .columns-12 .pad .inner, .columns-12 .inner .inner {
+      background-color: #eeeeee; } }
+
+/* line 6, ../sass/screen.scss */
+html, body {
+  height: 100%;
+  width: 100%; }
+
+/* line 11, ../sass/screen.scss */
+#wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  height: auto !important;
+  min-height: 100%;
+  /* ie6 ignores min-height completely */
+  height: 100%;
+  background-color: silver;
+  position: relative;
+  width: 100%; }
+
+/* line 21, ../sass/screen.scss */
+.typewriter {
+  display: none; }

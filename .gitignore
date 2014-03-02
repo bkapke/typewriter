@@ -1,0 +1,8 @@
+.DS_Store
+.rb
+sass/
+.sass-cache
+*.rb
+stylesheets/print.css
+stylesheets/ie.css
+js/typewriter-ck.js
