@@ -12,10 +12,17 @@
         $(document).ready(function(){
             var settings = ({
                 delayedStart: 300,
-                speed: 300,
-                randomRange: true
+                speed: 125,
+                randomRange: true,
+                debug: true,
+                //keyClickPath : "audio/typewriter-1.mp3"
             });
             var typeWriter = new TypeWriter($('#typewriter'), settings);
+            
+            $('#skip').click(function() {
+                //this just shows the text and ends the loop
+                typeWriter.skip();    
+            });
         });
     </script>
 </head>
@@ -27,6 +34,7 @@
                 <div class="inner">
                     <p class="typewriter" id="typewriter">Hello there, I am typewriter.js.  Initialize me and I will type out your code block in the view.</p>
                 </div>
+                <input id="skip" type="button" value="skip">
             </div>
         </div>
     </div>
