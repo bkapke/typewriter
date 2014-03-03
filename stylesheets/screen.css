@@ -2,6 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* --------------- colors ---------------------*/
 /* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -60,123 +61,148 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* Reserve this file for document defaults */
 /* box-sizing added to all as a wild card */
-/* line 8, ../sass/_default.scss */
+/* line 8, ../sass/_global.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 11, ../sass/_default.scss */
+/* line 11, ../sass/_global.scss */
 .clearfix {
   clear: both; }
 
-/* line 9, ../sass/_grid.scss */
+/*----------- borders and radii ---------------*/
+/* line 16, ../sass/_global.scss */
+.thin-border {
+  border: thin #4e4e4e solid; }
+
+/* line 20, ../sass/_global.scss */
+.small-radius {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px; }
+
+/* line 8, ../sass/_grid.scss */
 .columns-1 .pad, .columns-1 .inner {
   width: 8.33333%;
   padding: 1rem;
   float: left; }
-  /* line 13, ../sass/_grid.scss */
+  /* line 12, ../sass/_grid.scss */
   .columns-1 .pad .inner, .columns-1 .inner .inner {
-    background-color: #eeeeee; }
+    background-color: #eeeeee;
+    width: 100%; }
 
-/* line 9, ../sass/_grid.scss */
+/* line 8, ../sass/_grid.scss */
 .columns-2 .pad, .columns-2 .inner {
   width: 16.66667%;
   padding: 1rem;
   float: left; }
-  /* line 13, ../sass/_grid.scss */
+  /* line 12, ../sass/_grid.scss */
   .columns-2 .pad .inner, .columns-2 .inner .inner {
-    background-color: #eeeeee; }
+    background-color: #eeeeee;
+    width: 100%; }
 
-/* line 9, ../sass/_grid.scss */
+/* line 8, ../sass/_grid.scss */
 .columns-3 .pad, .columns-3 .inner {
   width: 25%;
   padding: 1rem;
   float: left; }
-  /* line 13, ../sass/_grid.scss */
+  /* line 12, ../sass/_grid.scss */
   .columns-3 .pad .inner, .columns-3 .inner .inner {
-    background-color: #eeeeee; }
+    background-color: #eeeeee;
+    width: 100%; }
 
-/* line 9, ../sass/_grid.scss */
+/* line 8, ../sass/_grid.scss */
 .columns-4 .pad, .columns-4 .inner {
   width: 33.33333%;
   padding: 1rem;
   float: left; }
-  /* line 13, ../sass/_grid.scss */
+  /* line 12, ../sass/_grid.scss */
   .columns-4 .pad .inner, .columns-4 .inner .inner {
-    background-color: #eeeeee; }
+    background-color: #eeeeee;
+    width: 100%; }
 
-/* line 9, ../sass/_grid.scss */
+/* line 8, ../sass/_grid.scss */
 .columns-5 .pad, .columns-5 .inner {
   width: 41.66667%;
   padding: 1rem;
   float: left; }
-  /* line 13, ../sass/_grid.scss */
+  /* line 12, ../sass/_grid.scss */
   .columns-5 .pad .inner, .columns-5 .inner .inner {
-    background-color: #eeeeee; }
+    background-color: #eeeeee;
+    width: 100%; }
 
-/* line 9, ../sass/_grid.scss */
+/* line 8, ../sass/_grid.scss */
 .columns-6 .pad, .columns-6 .inner {
   width: 50%;
   padding: 1rem;
   float: left; }
-  /* line 13, ../sass/_grid.scss */
+  /* line 12, ../sass/_grid.scss */
   .columns-6 .pad .inner, .columns-6 .inner .inner {
-    background-color: #eeeeee; }
+    background-color: #eeeeee;
+    width: 100%; }
 
-/* line 9, ../sass/_grid.scss */
+/* line 8, ../sass/_grid.scss */
 .columns-7 .pad, .columns-7 .inner {
   width: 58.33333%;
   padding: 1rem;
   float: left; }
-  /* line 13, ../sass/_grid.scss */
+  /* line 12, ../sass/_grid.scss */
   .columns-7 .pad .inner, .columns-7 .inner .inner {
-    background-color: #eeeeee; }
+    background-color: #eeeeee;
+    width: 100%; }
 
-/* line 9, ../sass/_grid.scss */
+/* line 8, ../sass/_grid.scss */
 .columns-8 .pad, .columns-8 .inner {
   width: 66.66667%;
   padding: 1rem;
   float: left; }
-  /* line 13, ../sass/_grid.scss */
+  /* line 12, ../sass/_grid.scss */
   .columns-8 .pad .inner, .columns-8 .inner .inner {
-    background-color: #eeeeee; }
+    background-color: #eeeeee;
+    width: 100%; }
 
-/* line 9, ../sass/_grid.scss */
+/* line 8, ../sass/_grid.scss */
 .columns-9 .pad, .columns-9 .inner {
   width: 75%;
   padding: 1rem;
   float: left; }
-  /* line 13, ../sass/_grid.scss */
+  /* line 12, ../sass/_grid.scss */
   .columns-9 .pad .inner, .columns-9 .inner .inner {
-    background-color: #eeeeee; }
+    background-color: #eeeeee;
+    width: 100%; }
 
-/* line 9, ../sass/_grid.scss */
+/* line 8, ../sass/_grid.scss */
 .columns-10 .pad, .columns-10 .inner {
   width: 83.33333%;
   padding: 1rem;
   float: left; }
-  /* line 13, ../sass/_grid.scss */
+  /* line 12, ../sass/_grid.scss */
   .columns-10 .pad .inner, .columns-10 .inner .inner {
-    background-color: #eeeeee; }
+    background-color: #eeeeee;
+    width: 100%; }
 
-/* line 9, ../sass/_grid.scss */
+/* line 8, ../sass/_grid.scss */
 .columns-11 .pad, .columns-11 .inner {
   width: 91.66667%;
   padding: 1rem;
   float: left; }
-  /* line 13, ../sass/_grid.scss */
+  /* line 12, ../sass/_grid.scss */
   .columns-11 .pad .inner, .columns-11 .inner .inner {
-    background-color: #eeeeee; }
+    background-color: #eeeeee;
+    width: 100%; }
 
-/* line 9, ../sass/_grid.scss */
+/* line 8, ../sass/_grid.scss */
 .columns-12 .pad, .columns-12 .inner {
   width: 100%;
   padding: 1rem;
   float: left; }
-  /* line 13, ../sass/_grid.scss */
+  /* line 12, ../sass/_grid.scss */
   .columns-12 .pad .inner, .columns-12 .inner .inner {
-    background-color: #eeeeee; }
+    background-color: #eeeeee;
+    width: 100%; }
 
 /*clear:both;*/
 /* line 57, ../sass/_grid.scss */
@@ -184,7 +210,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   clear: both; }
 
 @media only screen and (max-width: 767px) {
-  /* line 9, ../sass/_grid.scss */
+  /* line 8, ../sass/_grid.scss */
   .columns-1 .pad, .columns-1 .inner, .columns-2 .pad, .columns-2 .inner, .columns-3 .pad, .columns-3 .inner, .columns-4 .pad, .columns-4 .inner,
   .columns-5 .pad,
   .columns-5 .inner, .columns-6 .pad, .columns-6 .inner, .columns-7 .pad, .columns-7 .inner, .columns-8 .pad, .columns-8 .inner,
@@ -193,13 +219,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     width: 100%;
     padding: 1rem;
     float: left; }
-    /* line 13, ../sass/_grid.scss */
+    /* line 12, ../sass/_grid.scss */
     .columns-1 .pad .inner, .columns-1 .inner .inner, .columns-2 .pad .inner, .columns-2 .inner .inner, .columns-3 .pad .inner, .columns-3 .inner .inner, .columns-4 .pad .inner, .columns-4 .inner .inner,
     .columns-5 .pad .inner,
     .columns-5 .inner .inner, .columns-6 .pad .inner, .columns-6 .inner .inner, .columns-7 .pad .inner, .columns-7 .inner .inner, .columns-8 .pad .inner, .columns-8 .inner .inner,
     .columns-9 .pad .inner,
     .columns-9 .inner .inner, .columns-10 .pad .inner, .columns-10 .inner .inner, .columns-11 .pad .inner, .columns-11 .inner .inner, .columns-12 .pad .inner, .columns-12 .inner .inner {
-      background-color: #eeeeee; } }
+      background-color: #eeeeee;
+      width: 100%; } }
 
 /* line 6, ../sass/screen.scss */
 html, body {
@@ -214,10 +241,9 @@ html, body {
   min-height: 100%;
   /* ie6 ignores min-height completely */
   height: 100%;
-  background-color: silver;
   position: relative;
   width: 100%; }
 
-/* line 21, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 .typewriter {
   display: none; }

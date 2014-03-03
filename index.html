@@ -11,17 +11,21 @@
     <script>
         $(document).ready(function(){
             var settings = ({
-                delayedStart: 300,
-                speed: 125,
+                delayedStart: 0,
+                speed: 50,
                 randomRange: true,
-                debug: true,
+                debug: false,
                 //keyClickPath : "audio/typewriter-1.mp3"
             });
             var typeWriter = new TypeWriter($('#typewriter'), settings);
-            
+            typeWriter.startTyping();
             $('#skip').click(function() {
                 //this just shows the text and ends the loop
                 typeWriter.skip();    
+            });
+            $('#restart').click(function() {
+                //this just shows the text and ends the loop
+                typeWriter.restart();    
             });
         });
     </script>
@@ -29,13 +33,30 @@
 
 <body>
     <div id="wrapper">
-        <div class="columns-12">
-            <div class="pad">
-                <div class="inner">
-                    <p class="typewriter" id="typewriter">Hello there, I am typewriter.js.  Initialize me and I will type out your code block in the view.</p>
-                </div>
-                <input id="skip" type="button" value="skip">
+        <div class="row">
+            <div class="columns-1">
+                <div class="pad"></div>
             </div>
+            <div class="columns-4">
+                <div class="pad">
+                    <div class="inner thin-border small-radius">
+                        <input id="skip" type="button" value="skip">
+                        <input id="restart" type="button" value="restart">
+                    </div>
+                </div>
+            </div>
+            <div class="columns-4">
+                <div class="pad">
+                    <div class="inner thin-border small-radius">
+                        <p class="typewriter" id="typewriter">
+                            Hello there, I am typewriter.js.  Initialize me and I will type out your text block in the view. And now for som ipsum text....<br><br> In facilisis scelerisque dui vel dignissim. Sed nunc orci, ultricies congue vehicula quis, facilisis a orci. In aliquet facilisis condimentum. Donec at orci orci, a dictum justo. Sed a nunc non lectus fringilla suscipit. Vivamus pretium sapien sit amet mauris aliquet eleifend vel vitae arcu. Fusce pharetra dignissim nisl egestas pretium. 
+                            <div style="display:none;">
+                            <a href="http://slipsum.com">lorem ipsum</a></div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>

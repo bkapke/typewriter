@@ -25,12 +25,15 @@ var settings = ({
 
 var TypeWriter = function (element, settings) {
     "use strict";
-    var text = element.text(),
+    var text = element.html(),
         stringLength = text.length,
         count = 0,
         randomSpeed,
         skipTyping = false,
-        clickNoise;
+        clickNoise,
+        isTag,
+        tag,
+        tagSet;
 
     element.text("");
     element.show();
@@ -51,42 +54,88 @@ var TypeWriter = function (element, settings) {
         return randomSpeed;
     }
 
+    isTag = false;
+    tag = "";
+    tagSet = false;
+
     function typeLetter() {
-        var visibleTextLength = element.text().length;
+        var visibleTextLength = element.text().length,
+            nextChar = text.charAt(count);
+
+        count++;
         if (visibleTextLength <= stringLength && !skipTyping) {
-            element.append(text.charAt(count));
+            if (nextChar === "<") {
+                isTag = true;
+            }
+            if (!isTag) {
+                element.append(nextChar);
+            } else {
+                if (nextChar === '>' && isTag === true) {
+                    tag = tag + nextChar;
+                    isTag = false;
+                    tagSet = true;
+                    console.log(tag);
+                } else if (nextChar !== '>' && isTag === true) {
+                    tag = tag + nextChar;
+                }
+
+                if (tagSet) {
+                    element.append(tag);
+                    tag = '';
+                    tagSet = false;
+                }
+
+            }
+
         }
+
         if (skipTyping) {
-            element.text(text);
+            element.append(text);
             count = stringLength;
             if (clickNoise) {
                 clickNoise.pause();
             }
         }
-        count++;
+
     }
 
-    setTimeout(function () {
-        if (clickNoise) {
-            clickNoise.play();
+
+    this.startTyping = function (delaySetting) {
+        var delay;
+        if (!delaySetting) {
+            delay = 0;
+        } else {
+            delay = settings.delayedStart;
         }
-        (function loop() {
-            randomSpeed = randomizeSpeed();
-            setTimeout(function () {
-                typeLetter();
-                if (count < stringLength) {
-                    loop();
-                } else {
-                    if (clickNoise) {
-                        clickNoise.pause();
+        setTimeout(function () {
+            if (clickNoise) {
+                clickNoise.play();
+            }
+            (function loop() {
+                randomSpeed = randomizeSpeed();
+                setTimeout(function () {
+                    typeLetter();
+                    if (count < stringLength) {
+                        loop();
+                    } else {
+                        if (clickNoise) {
+                            clickNoise.pause();
+                        }
                     }
-                }
-            }, randomSpeed);
-        }());
-    }, settings.delayedStart);
+                }, randomSpeed);
+            }());
+        }, delay);
+    };
 
     this.skip = function () {
         skipTyping = true;
+    };
+
+    this.restart = function () {
+        skipTyping = false;
+        count = 0;
+        element.text("");
+        this.startTyping(false);
     };
 
 
