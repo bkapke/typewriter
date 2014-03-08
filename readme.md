@@ -10,9 +10,9 @@ Typwriter.js is a quick easy plugin that allows you pick a bloack of text and si
 
 ##Dependencies
 
-###**jQuery**
+*jQuery
 
-###**typewriter.js**
+*typewriter.js
 
 
 ##Implementation
